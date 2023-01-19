@@ -17,6 +17,10 @@ function CheckBox(props: Props) {
     const item = child as React.ReactElement<
       React.PropsWithChildren<ChildrenProps>
     >;
+    if (typeof item.type !== "function") {
+      return item;
+    }
+
     const clone = React.cloneElement(item, {
       checked,
       setChecked,
