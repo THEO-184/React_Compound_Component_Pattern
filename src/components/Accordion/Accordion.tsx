@@ -17,6 +17,7 @@ const AccordionContext = React.createContext<AccordionContextProps | null>(
 
 function Accordion({ children }: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
+  
 
   const handleExpand = useCallback(() => {
     setIsExpanded((prev) => !prev);

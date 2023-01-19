@@ -1,5 +1,7 @@
 import "./styles.css";
 import { Accordion } from "./components/Accordion";
+import { CheckBox, CheckBoxInput, CheckBoxLable } from "./components/CheckBox";
+
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { headerStyle } from "./utils/constants";
@@ -26,6 +28,10 @@ export default function App() {
           maxime aliquam explicabo nam magnam totam eligendi?
         </Accordion.Content>
       </Accordion>
+      <CheckBox>
+        <CheckBox.Input />
+        <CheckBox.Label title="CheckBox Label" />
+      </CheckBox>
     </div>
   );
 }
